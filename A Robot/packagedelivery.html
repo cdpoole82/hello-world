@@ -1,17 +1,26 @@
 <!doctype html>
-
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Automaton Package Delivery</title>
   <meta name="description" content="Automaton Package Delivery">
   <meta name="author" content="Christopher Poole">
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
 </head>
 
 <body>
+  <h3>Project purpose: Our robot will be moving around the village. There are parcels in various places, each addressed to some other place. The robot picks up parcels when it comes to them and delivers them when it arrives at their destinations.
+    The automaton must decide, at each point, where to go next. It has finished its task when all parcels have been delivered</h3>
     <h1>The Village</h1>
     <img src="villagemap.png">
-    <script src="automaton.js"></script>
+    <div id="logging"></div>
+    <script  src="automaton.js"></script>
+    <script type="text/javascript">
+    runRobot(VillageState.random(), randomRobot);
+    document.getElementById("logging").innerHTML = LogOutput.logOutput;
+    </script>    
+    
+        
 </body>
 </html>
