@@ -10,17 +10,28 @@
 </head>
 
 <body>
-  <h3>Project purpose: Our robot will be moving around the village. There are parcels in various places, each addressed to some other place. The robot picks up parcels when it comes to them and delivers them when it arrives at their destinations.
-    The automaton must decide, at each point, where to go next. It has finished its task when all parcels have been delivered</h3>
-    <h1>The Village</h1>
-    <img src="villagemap.png">
-    <div id="logging"></div>
-    <script  src="automaton.js"></script>
-    <script type="text/javascript">
-    runRobot(VillageState.random(), randomRobot);
-    document.getElementById("logging").innerHTML = LogOutput.logOutput;
-    </script>    
-    
-        
+  <h4>Project purpose: Our robot will be moving around the village. There are parcels in various places, each addressed
+    to some other place. The robot picks up parcels when it comes to them and delivers them when it arrives at their
+    destinations. The automaton must decide, at each point, where to go next. It has finished its task when all parcels have been
+    delivered</h4>
+
+  <h1>Meadowfield Village</h1>
+
+  <script src="automaton.js"></script>
+  <script src="animatevillage.js"></script>
+  <script type="text/javascript">
+
+    //runs the inputted robot with text based output
+    //runRobot(VillageState.random(), randomRobot);
+    //document.getElementById("logging").innerHTML = LogOutput.logOutput;
+
+    //runs the inputted robot with the village animation output (animatedVillage.js)
+    runRobotAnimation(VillageState.random(), randomRobot);
+
+  </script>
+
+  <div id="logging"></div>
+
 </body>
+
 </html>
