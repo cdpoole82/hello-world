@@ -12,10 +12,26 @@
 
 
 <body>
+<img src="Assets/Images/laughemoji1.JPG" height="200" width="250" align="left" alt="Laugh Emoji" onclick="madLibStart()">
+<p id="madLib">Click me to start!</p>
+
 <script>
-// this is an example of an in-line comment.
-/* this is a multi-line comment example,
-next line */
+
+//MADLIB GAME
+function madLibStart(){
+document.getElementById("madLib").innerHTML= `Fill in the blanks!`;
+}
+
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+    var result = "";
+
+    return result;
+}
+
+
+
+
+// THIS SECTION IS GENERAL LEARNING NOTES FROM JS TUTORIALS
 
 /*Data Types:
 undefined (empty), null (blank), boolean, string, symbol (immutable primative), number, and object
@@ -39,7 +55,20 @@ var myStr1 = 'I am a "double quoted" statement'; //use single quotes or back-tic
 //string methods
 var stringLength = myCompany.length; //string propery length
 var firstLetterofName = myName[0]; //use bracket notation to point to a position within the string
-console.log(firstLetterofName);
+//strings are immutable, in that individual charactesr cannot be modified in the variable, the string variable must be fully changed
+
+//ARRAYS
+var ourArray = []; //empty array. Can be filled with different data types
+var nestedArray = [[myName, myStr], [myCompany, myStr1]]; //arrays can hold an arrays to create nested data structures
+var myData = nestedArray[0][0] + ", " + nestedArray[1][0];
+console.log(myData); // Chris, Cosaic
+//array .push function which adds an array into an existing array as the next element
+//array .pop function will remove the last element in the array
+//array .shift removes the first element in the array
+//array .unshift adds an element to the beginning of the array
+
+//STAND IN LINE - QUEUES
+
 
 
 </script>
